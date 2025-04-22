@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Omni Support Login Redirect",
+    "version": "1.0",
+    "description": "Redirects Omni login URLs to support login",
+    "permissions": [
+        "declarativeNetRequest"
+    ],
+    "host_permissions": [
+        "*://*.exploreomni.com/*",
+        "*://*.exploreomni.dev/*",
+        "*://*.omniapp.co/*",
+        "*://*.thundersalmon.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
